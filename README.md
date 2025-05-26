@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 实时工资计算器
 
-## Getting Started
+一个酷炫的实时工资显示网站，让你实时看到今天已经赚到的工资！
 
-First, run the development server:
+## ✨ 功能特点
 
+### 🎯 核心功能
+- **实时工资显示**: 大大的金额显示，实时更新当日累计收入
+- **智能时间判断**: 自动识别是否在工作时间内
+- **个性化设置**: 支持自定义月薪、工作天数、上下班时间
+- **详细统计**: 显示月薪、日薪、时薪等详细信息
+
+### 🎨 视觉效果
+- **渐变背景**: 紫色到蓝色的动态渐变背景
+- **玻璃态设计**: 现代化的毛玻璃效果界面
+- **动画效果**: 流畅的进入动画和数字变化动画
+- **响应式设计**: 完美适配桌面和移动设备
+
+### 🔧 技术特性
+- **实时更新**: 每秒更新一次工资数据
+- **本地存储**: 设置自动保存到浏览器
+- **TypeScript**: 完整的类型安全
+- **现代框架**: 基于 Next.js 15 + React 19
+
+## 🛠️ 技术栈
+
+- **框架**: Next.js 15.3.2
+- **语言**: TypeScript
+- **样式**: Tailwind CSS 4
+- **动画**: Framer Motion
+- **图标**: Lucide React
+- **字体**: Inter (Google Fonts)
+
+## 🚀 快速开始
+
+### 安装依赖
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 启动开发服务器
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 构建生产版本
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 使用说明
 
-## Learn More
+### 1. 设置工资信息
+点击右上角的设置按钮，输入以下信息：
+- **月薪**: 你的月薪金额（人民币）
+- **每月工作天数**: 通常为 22 天
+- **上班时间**: 例如 09:00
+- **下班时间**: 例如 18:00
 
-To learn more about Next.js, take a look at the following resources:
+### 2. 查看实时工资
+- 主屏幕显示今日已赚取的工资金额
+- 工作时间内会实时更新
+- 非工作时间显示相应状态
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. 查看统计信息
+右侧面板显示：
+- 月薪、日薪、时薪详细信息
+- 当前工作时间设置
+- 实时时间和日期
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 计算逻辑
 
-## Deploy on Vercel
+工资计算基于以下公式：
+```
+日薪 = 月薪 ÷ 每月工作天数
+时薪 = 日薪 ÷ 每日工作小时数
+分钟工资 = 时薪 ÷ 60
+当日收入 = 已工作分钟数 × 分钟工资
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 设计理念
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 视觉设计
+- **大字体显示**: 突出当前收入，给用户强烈的视觉冲击
+- **渐变色彩**: 使用绿色到蓝色的渐变表示金钱和成长
+- **动态效果**: 数字变化时的弹性动画增加趣味性
+- **状态指示**: 清晰的工作状态指示器
+
+### 用户体验
+- **一目了然**: 主要信息突出显示，次要信息合理布局
+- **简单设置**: 最少的配置项，快速上手
+- **实时反馈**: 立即看到设置变化的效果
+- **移动友好**: 响应式设计，手机上同样好用
+
+## 🔮 未来计划
+
+- [ ] 添加工作日历功能
+- [ ] 支持多种货币
+- [ ] 添加工资历史记录
+- [ ] 支持加班费计算
+- [ ] 添加目标设定功能
+- [ ] 支持团队工资对比
+
+## 📄 许可证
+
+MIT License
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+---
+
+**让每一分钟都有价值！** ⏰💰

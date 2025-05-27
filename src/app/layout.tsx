@@ -1,12 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "实时工资计算器 - 让每一分钟都有价值",
-  description: "一个酷炫的实时工资显示网站，实时计算你今天已经赚到的工资",
-  keywords: "工资计算器,实时工资,薪资计算,工作时间,收入统计",
-  authors: [{ name: "工资计算器" }],
-  viewport: "width=device-width, initial-scale=1",
+  title: "💎 财富累积器 - 看着您的财富每秒增长！",
+  description: "一个让您实时感受财富增长的应用！支持多种货币显示，标题栏隐秘显示收入，领导在也不怕！",
+  keywords: "财富累积器,实时收入,工资计算,多货币显示,隐秘查看,薪资统计",
+  authors: [{ name: "财富累积器" }],
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

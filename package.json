@@ -1,10 +1,15 @@
 {
-  "name": "hello-work",
-  "version": "0.1.0",
+  "name": "money-accumulator",
+  "version": "1.0.0",
+  "description": "一个让您实时感受财富增长的应用！支持多种货币显示，看着您的收入每秒钟都在增长！",
+  "keywords": ["财富累积器", "实时收入", "工资计算", "多货币显示", "Next.js", "React", "TypeScript"],
+  "author": "Rey",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -25,5 +30,17 @@
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/money-accumulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/money-accumulator/issues"
+  },
+  "homepage": "https://github.com/your-username/money-accumulator#readme"
 }

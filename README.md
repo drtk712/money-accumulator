@@ -40,7 +40,7 @@
 1. **克隆项目**：
 ```bash
 git clone git@github.com:drtk712/money-accumulator.git
-cd hello-work
+cd money-accumulator
 ```
 
 2. **安装依赖**：
@@ -136,7 +136,7 @@ docker buildx build --platform linux/amd64,linux/arm64 -t money-accumulator .
 ## 📁 项目结构
 
 ```
-hello-work/
+money-accumulator/
 ├── src/
 │   ├── app/
 │   │   ├── globals.css      # 全局样式和动画
